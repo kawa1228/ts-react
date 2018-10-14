@@ -10,7 +10,7 @@ import { Chap06 } from "./chap06";
 import logo from "./logo.svg";
 
 class App extends React.Component {
-  public Chapter() {
+  public chapter() {
     // Chap01();
     // Chap02();
     // Chap03();
@@ -19,7 +19,7 @@ class App extends React.Component {
     Chap06();
   }
   public render() {
-    this.Chapter();
+    this.chapter();
     const logoOptions = {
       alt: "logo",
       className: "App-logo",

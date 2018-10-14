@@ -8,6 +8,7 @@ npx create-react-app hello-world --scripts-version=react-scripts-ts
 $ yarn install
 $ yarn start
 ```
+
 TypeScript
 ```
 $ yarn global add ts-node
@@ -23,13 +24,13 @@ tslint.json
     "no-console": [false]
   }
 ```
-tsconfig.json
 
-srcからの絶対パス
+tsconfig.json
 ```
 -     "baseUrl": ".",
 +     "baseUrl": "src",
 ```
+(srcからの絶対パス)
 ```
 -     "lib": ["es6", "dom"],
 +     "lib": ["es2018", "dom"],
