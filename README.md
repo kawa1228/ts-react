@@ -1,3 +1,28 @@
+## 練習用
+
+create-react-app
+```
+npx create-react-app hello-world --scripts-version=react-scripts-ts
+```
+```
+$ yarn install
+$ yarn start
+```
+TypeScript
+```
+$ yarn global add ts-node
+```
+```
+$ yarn add @types/react 
+$ yarn add @types/react-dom
+```
+
+tslint.json
+```
+  "rules": {
+    "no-console": [false]
+```
+___
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
