@@ -10,7 +10,7 @@ import { Chap06 } from "./chap06";
 import logo from "./logo.svg";
 
 class App extends React.Component {
-  public Hoge() {
+  public Chapter() {
     // Chap01();
     // Chap02();
     // Chap03();
@@ -19,13 +19,28 @@ class App extends React.Component {
     Chap06();
   }
   public render() {
-    this.Hoge();
+    this.Chapter();
+    const logoOptions = {
+      alt: "logo",
+      className: "App-logo",
+      src: logo
+    };
+    const title = "Hello React!";
+    const targets = ["World", "America", "Japan"];
+
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">こんにちは React</h1>
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
+          <img {...logoOptions} />
+          {/* <h1 className="App-title">こんにちは React</h1> */}
+          {title && <h1 className="App-title">{title}</h1>}
         </header>
+        {targets.map((target, i) => (
+          <p key={i} className="App-info">
+            Hello, {target}!
+          </p>
+        ))}
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>

@@ -10,7 +10,7 @@ export const Chap04 = () => {
 
   console.log(arr.every(n => n !== 0));
 
-  // console.log(arr.includes(5)); TSまだ実装できないっぽい？
+  console.log(arr.includes(5));
 
   console.log(arr.reduce((n, m) => n + m));
 
