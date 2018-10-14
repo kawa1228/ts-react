@@ -1,4 +1,4 @@
-## 練習用
+## TypeScript + React 練習用
 
 create-react-app
 ```
@@ -21,6 +21,18 @@ tslint.json
 ```
   "rules": {
     "no-console": [false]
+  }
+```
+tsconfig.json
+
+srcからの絶対パス
+```
+-     "baseUrl": ".",
++     "baseUrl": "src",
+```
+```
+-     "lib": ["es6", "dom"],
++     "lib": ["es2018", "dom"],
 ```
 ___
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
